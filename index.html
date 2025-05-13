@@ -2,13 +2,19 @@
 <html>
   <head>
     <title>Download Excel</title>
+    <script>
+      function logDownload(fileName) {
+        fetch("https://script.google.com/macros/s/AKfycbwMtivfSv3mq1p7DIoKXZ-RfwJiYXphzaIq8SNhl-as8T9q4tpMpNhPnjgmRXdgTjlqCQ/exec?file=" + fileName);
+      }
+    </script>
   </head>
   <body>
     <h1>Download Excel Saya</h1>
     <ul>
       <li>
         <a
-          href="https://raw.githubusercontent.com/mr-rfauji/excel-files/main/LogDownload.xlxs" download>
+          href="https://raw.githubusercontent.com/mr-rfauji/excel-files/main/LogDownload.xlxs" 
+          downloadonclick="logDownload('LogDownload.xlxs')">
           Download File Excel
         </a>
       </li>
